@@ -5,7 +5,7 @@ const userRegisterdetails = new mongoose.Schema({
     type: String,
     required: true,
     match:
-    /^[A-Z][a-z]+\s[A-Z][a-z]+$/,
+    /^[A-Za-z]+(?: [A-Za-z]+)?$/,
   },
   Email: {
     type: String,
