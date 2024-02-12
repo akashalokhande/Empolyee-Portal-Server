@@ -4,8 +4,7 @@ const userRegisterdetails = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    match:
-    /^[A-Za-z]+(?: [A-Za-z]+)?$/,
+    match: /^[A-Za-z]+(?: [A-Za-z]+)?$/,
   },
   Email: {
     type: String,
@@ -27,10 +26,9 @@ const userRegisterdetails = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    match:/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
   },
 });
 
-const usermodel = mongoose.model("users",userRegisterdetails);
+const usermodel = mongoose.model("users", userRegisterdetails);
 
 module.exports = usermodel;
