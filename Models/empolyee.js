@@ -4,7 +4,7 @@ const Employschema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    match: /^[A-Z][a-z]+\s[A-Z][a-z]+$/,
+    match: /^[A-Za-z]+(?: [A-Za-z]+)?$/,
   },
   designation: {
     type: String,
